@@ -50,3 +50,19 @@ class UserProfileView(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=400)
+    
+
+class siguupview(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    def post(self, request):
+        username = request.data.get('username')
+        password = request.data.get('password')
+        email = request.data.get('email')
+
+        if serializer.is_valid():
+            return Response({'error': 'Username already taken'}, status=status.HTTP_400_BAD_REQUEST)
+
+        user = User.objects.create_user(username=username, password=password, email=email)
+        return Response({'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
+
+

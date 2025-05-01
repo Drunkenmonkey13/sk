@@ -4,6 +4,8 @@ import UploadPage from './pages/UploadPage';
 import FilesListPage from './pages/FilesListPage';
 import PortalDetailsPage from './pages/PortalDetailsPage';
 import UserProfilePage from './pages/UserProfilePage';
+import SignupPage from './pages/SignupPage';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/files" element={<FilesListPage />} />
         <Route path="/portal-details" element={<PortalDetailsPage />} />
         <Route path="/profile" element={<UserProfilePage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
     </BrowserRouter>
   );
