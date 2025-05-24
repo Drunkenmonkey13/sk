@@ -18,6 +18,7 @@ function FilesListPage() {
       <table border="1">
         <thead>
           <tr>
+            <th>si.no</th>
             <th>Filename</th>
             <th>Date Uploaded</th>
             <th>File Type</th>
@@ -26,6 +27,7 @@ function FilesListPage() {
         <tbody>
           {files.map(file => (
             <tr key={file.id}>
+              
               <td><a href={`http://localhost:8000/media/${file.file.split('/')[1]}`} target="_blank" rel="noopener noreferrer">{file.filename}</a></td>
               <td>{file.upload_date}</td>
               <td>{file.file_type}</td>

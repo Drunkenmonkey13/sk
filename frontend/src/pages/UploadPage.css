@@ -43,7 +43,7 @@
 
 /* Sidebar */
 .sidebar {
-  flex: 1;
+  /* flex: ; */
   padding: 32px;
   background-color: #f0f0f0;
   color: #444;

@@ -1,0 +1,1500 @@
+this conference will now be recorded
+good morning everyone today we are going
+to discuss about the project 2 that is
+mp3 tag reader and editor
+so in this project uh
+we are going to discuss about the m
+about the mp3 diagram
+can anyone tell me like what is mp3
+yes mp3 is nothing but a it is an audio
+file right so we are we are calling it
+mp3 mp3 is nothing but it is some audio
+file it will be having some audio
+details whether it is some voice records
+or some album songs like that we will be
+having right so with the help of this
+mp3 tag reader and editor i am going to
+view some details about that particular
+mp3 file as well as i am going to edit
+the particular uh file details okay so
+whenever i have downloaded some
+particular file i'm opening in my uh
+some media player okay i'm opening that
+particular mp3 file in some media player
+what it will show it will uh it will
+play the song or it will play the audio
+and it at the same time it will display
+some informations right for example it
+will display some or the name of that
+particular mp3 file and the artist's
+name if it is a song it will play the
+artist name which here along with that
+it will show the album image right so
+i'll be having so many informations when
+i just click on the particular mp3 file
+right so if i want to view some uh
+properties of the particular mp3 file
+what will i do i will right click and i
+will open the properties of the
+particular mp3 file right
+so in that
+once i open the properties it will
+display few informations or more
+informations like the mp3 file name
+album which album it does and when it is
+composed on so many informations along
+with i will be having the size of that
+mp3 file and i will be having so many
+informations regarding the mp3 file
+right so if i want to view any
+informations and to click on the
+properties and i need to check right so
+here in this project we are going to
+discuss
+we are creating one application simple
+application okay
+so in this uh will be
+if i pass any uh mp3 file i'll be
+fetching the informations from the mp3
+file and i will be displaying the
+particular informations as well as i'm
+also editing the particular informations
+if i want to change the year of the
+particular mp3 file i can edit so here i
+am doing both operations one is reading
+and as well as i am editing the same mp3
+file okay
+so we'll start with the project
+so here yes mp3 is nothing but it is a
+uh
+it is an audio file mp3 is nothing but
+an audio file so mp3 tag reader actually
+mp3 tag reader it is a software actually
+it is a software and it is a desktop
+based and it is not a web based it is a
+desktop based application okay it is a
+software so with the help of the
+software i can able to read the
+particular informations about the
+patella mp3 whichever mp3 file i'm
+giving it will display some informations
+regarding the particular mp3 file okay
+that is what mp3 tag reader
+so this mp3 tag data for mp3 we have a
+tag that is id3 tag details okay inside
+this id3 i will be having so many
+informations
+okay so we have different types of tags
+so for this but mp3 will be we will be
+using id3 tags okay so id3 is it is a
+metadata container can anybody tell what
+is metadata
+yes if i have one or more informations
+we call it as a metadata so id3 is
+nothing but it is a metadata container
+which means this id3 is holding so many
+information about the particular mp3
+audio file okay so this id3 is holding
+so many informations about this
+particular mp3 file for example uh if i
+choose any or
+audio file means it will be having some
+the name of the audio what was the title
+of the particular song and uh who are
+the artists and what was who composed
+the particular song and what was the
+size of the file we'll be having
+so many information i'll be having about
+that audio file right so all those
+details will be kept inside this id3 tag
+so that's why we call it as a id3 as a
+metadata container
+okay so in this metadata container we
+have two different versions id3 is
+having two different versions one is id
+three version one sorry one is id three
+version one and another one is id three
+version two so totally we having two
+two types of versions so first we'll see
+one by one
+so here we are discussing about id3
+version one inside this id3 version one
+i am having two subversions i am having
+two sub versions one is one point zero
+and another one is one point one today i
+am having two subversions in this
+version one one point zero and 1.1 so
+first we'll discuss 1.0 okay so in this
+1.0
+if i take an id3 attack it will be
+having only very few tags that is title
+artist album year command and general so
+these many informations so totally i'm
+having six informations
+from this id3 version 1.0 okay so only
+if i want to fetch some information only
+i can pitch these many informations from
+the mp3 file if i use a version 1.0
+okay so here and also one more thing
+here all the things it is of a fixed
+size for example song title is of 30
+characters artist name is of 30
+characters album name is of 30
+characters here is a four characters so
+like this i will be having a fixed size
+of data
+for example i am having a song title
+that is of 30 characters but i am having
+47 characters for example i'm giving
+while editing the particular thing i'm
+giving some 47 characters right but i'm
+i have i'm but i'm having only 30
+bytes of memory i like it for the
+particular song title so what uh what
+happened here
+i'm having only 30 spaces but i'm trying
+to store 47 characters
+yes overflow will happen right so
+whatever the characters i have given
+only up to 30 characters it will take
+other characters will be ignored other
+characters will be ignored i can able to
+store only up to 30 characters
+right so this is about version 1.0
+the next is version 1.1 can anyone uh
+with the help of this images can you
+relate these images and tell me what is
+the difference
+yes when compared to version 1.0 one 1.1
+version is having one more tag that is
+album track that is album track so title
+is common artist is common album is
+common year command all these are common
+the extra thing which has been added in
+the version 1.1 it is album track
+okay and the next one is general this is
+common for both 1.0 and 1.1 so when
+compared to these two versions i have
+one updated tag that is album track in
+this version 1.1
+right so here
+here also all the characters all the
+characters are fixed size all the tags
+which has a fixed size of characters for
+example title is of 30 same so like this
+i will be having some fixed amount of
+memory will be allocated
+okay
+so here
+i'm having total 128 bytes of data
+totally i'm having 128 bytes of data in
+this metadata container okay so 30 is
+for
+song title and 30 is for artist name
+then 30 is for album then again 4 is for
+year 30 is for comment and one byte for
+jenner so totally i am having 125 bytes
+but i have told you that i have i'm
+having 128 bytes of metadata but here it
+is up to 125
+so what about the remaining three
+what about the remaining three
+yes
+the missing three bytes that can be
+found at the end of the tag end of the
+tag before the song title so we call it
+as these three bits will be allocated as
+a t
+so those three bits missing three bits
+will be allocated for this particular
+characters
+okay these three characters
+for
+those three bytes of characters these
+three bytes of data will be allocated
+that is t a g
+okay
+so totally i am having 128 bytes of data
+inside this metadata container okay so
+this is the difference between version
+1.0 and version 1.1
+okay
+so the next we'll see version
+2.
+inside this version 2 i'm having three
+subversions one is version 2.2 2.3 and
+2.4 totally i'm having
+three subversions
+okay so we'll discuss about generally if
+i took a version two this is my block
+diagram
+okay so here i'm having one field that
+is file identifier
+so if it is an mp3 file i will be having
+a it has a id3 so if it is a mp3 file i
+will be having a id3 so totally all
+those uh header part will be having 10
+bytes of data
+so 10 bytes of data for this whole
+header all these four things we call it
+as a header path
+all these four things we call it as a
+header part okay so this header
+part has totally 10 bytes
+so it has been splitted okay so first
+file identifier and the file identifier
+it should be of id3 okay it is of three
+bytes i am having three characters so
+three bytes of memory will be allocated
+for this
+file identifier
+okay
+the next one is version so version is 0
+3 0 0 for
+this is a hexadecimal value so this is
+equivalent for the version that is two
+point version two whether it is two
+point two two point three two point four
+this is common for all these sub
+versions
+so if it is version two
+the version detail should be
+zero three and zero 0
+so if it is 0 3 and 0 0 which means i
+have opted for a version 2
+okay the particular mp3 file is of
+version 2.
+so
+here i'm having two bytes of data
+totally this is three and this is two
+today i'm having five bytes of data
+remaining five bytes are remaining for
+me right so next one is flag whether the
+flag is setted or not so i'll be
+representing this flag with one byte of
+data
+the next one is size the size of the
+whole mp3 file so here it is having four
+bytes of data for the size i'm
+allocating for it has been allocated
+four bytes of data for this particular
+size so totally i'm having 10 bytes of
+data for this particular header so
+the file identifier is of
+three bytes then version is of
+then i'm having one flag and then sizes
+of four bytes so the first two rows
+indicates the header header of the
+particular mp3 tag
+so totally i'm having 10 bytes of data
+for the header part
+okay
+so in when compared to version 2.2 if i
+say
+this frame id which is nothing but the
+this one this frame id it is of three
+characters headless is all same
+headers is on same so the size differs
+with this tag details so i have told you
+this id3 tag will have so many meta data
+which is nothing but each and every
+details about the particular mp3 file
+right so this frame id is nothing but it
+represents a
+uh a short form for example t a l which
+means show type uh album name song title
+like that
+t a l
+it is a tag
+these star if if i found a d stack which
+means after the stack i'm having some
+content that contents is nothing but a
+song title or album title like that
+okay
+one more is toa like it means artist
+name okay this is nothing but artist
+name if i found these tag in my mp3 file
+then after this tag the details will be
+stored which details means the artist
+details will be stored
+okay so we have so many tag targets here
+i have shown you only two but we have so
+many
+tag details
+okay so here it is of three characters
+right so three bytes of memory will be
+allocated for this
+frame id in version 2.2
+for this frame id three bytes of memory
+will be allocated for each byte i am
+storing on one characters
+okay so all the things for example if i
+take here it will be y e r it will be y
+e r the tag is y e r
+so i'll be having only three
+bytes of data for the stack
+okay then size the size is nothing but
+the size of the particular attack which
+means if i
+say t a l it is
+it is uh it is used to do
+and display some album title or short
+title like that right song title like
+that so if it is an album title means it
+will be having some few characters for
+example i am having 20 characters so i
+need to fetch how many characters it has
+been stored right so that is the purpose
+of size so how many characters this
+particular
+tag is having so that is about size to
+storing the size i am having three bytes
+of data for this 2.2 version the frame
+id is for three bytes as well as size is
+for three bytes
+this frame id is nothing but tag
+tag name okay tag names
+so this is about version 2.2
+the next version is version 2.3 or 2.4
+in our project we are going to use a
+version that is 2.3 version okay that is
+2.3 version so for 2.3 version and 2.4
+version we have the frame id the same
+frame id but only the size is different
+so before it has a size of
+three bytes right so in the version 2.2
+here you can see i'm having a frame id
+it is of three bytes of data
+for this version 2.3 i am having four
+bytes of data so talb this is nothing
+but one tag so this chart it represents
+an album title title of the album
+okay next i am having ti t2 which means
+this is nothing but song title this is
+nothing but song title
+okay so here i'm having four characters
+to represent each tag
+so these will be stored in this four
+bytes of data that is frame id
+okay these tag head details will be
+stored in this frame id
+then i am having a size size for this
+particular file so here the size is four
+here the size is four bytes
+okay the next one is flag
+so here the flag is of two bytes so for
+version uh one version v1 we have seen i
+will be having only one byte
+has been allocated for the flag but for
+version 2.3 and 2.4 will be having two
+bytes of memory will be allocated for
+this
+particular flag
+okay
+so with the help of this frame uh with
+the help of this tag details i can
+access the details about the mp3 file
+i can access the details about the mp3
+file
+so here we'll be using 2.3 version right
+so we'll see what are all the things i
+need to fetch from the mp3 file so this
+mp3 file will be having lots of
+informations but in this project we are
+going to fetch very few informations
+okay
+the first one is tpe1 which means our
+testing if i want to fetch our destiny i
+need to use a tag that is tp e1
+okay the next tag is ti t2 which means
+title song title or song name we call it
+as okay so ti t2 means it is a song
+title
+the next one is t-a-l-b which means
+album name which means album name next
+one is t-y-e-r which means year so which
+year it has been
+created or composed like that
+next one is t c o n is a content type so
+it is a content type the cym means
+composer who compose a particular mp3
+file like that so these many
+informations we are going to fetch from
+the mp3 file
+okay so understood with this
+yeah next is project requirements what
+are all the things i want to uh perform
+with in this project we'll discuss that
+okay
+so the first one is help for example i
+will execute and show you how it should
+work
+so while compiling first i need to
+compile the project right so i'm
+compiling all the c project files i'm
+having okay then i'm performing dot
+slash a dot out so in this particular
+project
+so in this particular project you need
+you'll be passing all the details
+through a command line argument all the
+details if you want to views the detail
+or if you want to edit a particular
+tags
+that all those things will be passing
+through a command line
+so here i'm not passing any command line
+arguments other than dot slash error dot
+i'm not passing any other command line
+arguments and i'm pressing enter so it
+is showing error
+invalid arguments which means i need to
+pass some arguments which means i need
+to pass some other arguments so here i
+am
+it is printing some usage message right
+so to view please pass it should be like
+dot slash a dot out hyphen v's option to
+view okay then i need to pass the mp3
+file name
+the next one is to edit please pass like
+so if i want to perform any edit
+operation of the particular mp3 file
+i need to pass dot slash a dot dot
+hyphen e is to edit these tags like t
+a capital a hyphen m hyphen my high
+fancy these are nothing but if i want to
+change a particular title if i want to
+change only the title i will be passing
+after minus e i'll be passing minus t
+then
+changing text which um for example i'm
+having a title called as some title i'm
+having then i'm replacing with my new
+type so in this place you need to pass
+your new title then followed by the mp3
+name okay
+so this is how if i want to perform an
+edit operation i need to pass these many
+details through a command line argument
+okay the next is help
+to get a help i need to pass an option
+hyphen hyphen help so we'll see first
+how hyphen iphone help is working okay
+so here you need to check whether the
+command line arguments has been passed
+or not
+if i didn't pass anything i need to
+print some error message as well as the
+usage message
+error message as well as a usage message
+okay so if i want to know more about
+these
+simply if it is a hyphen t hyphen i
+couldn't understand right so to better
+understanding i can go with an option
+called as help
+so here
+dot a dot out hyphen hyphen help
+right so if i execute this see it is
+displaying the help menu
+so if i pass only one argument and that
+argument is nothing but hyphen hyphen
+help
+so if i pass hyphen hyphen help i want
+to print the help menu okay so here the
+first one it is nothing but hyphen v if
+i pass hyphen v hyphen v is nothing but
+to view the mp3 file contents if i want
+to just view the content i i need to
+pass an option minus v
+the next option is minus e if i want to
+perform any edit operation i need to
+pass an option that is minus e
+for example if i want to edit the song
+title i need to pass an option minus t
+if i want to edit the artist name i want
+to pass an option that is minus a
+or if i want to edit the album name i
+have to pass an option minus
+uppercase a
+if i want to edit the year i'll be
+passing minus y
+then to edit the content that is minus m
+to edit comment will be basi minus c
+okay so these many options i am having
+so first we will see so we have
+discussed the error message and the help
+message so we have discussed the error
+handling that is if i didn't pass any
+command line argument i need to print
+one error message along with the usage
+message like this
+if i didn't pass any command line
+argument i need to print error message
+and as well as the usage message okay so
+if i want to know more about that uh
+options which which i want to perform
+along with this project so i'll be
+i need to display the help menu
+so for help you know i'll be passing an
+argument that is hyphen hyphen help
+okay then we'll see how to view the
+particular mp3 file so here the first
+step is i need to
+uh run the pro file that is dot a dot
+out so after dot slash a dot what should
+i pass i need to pass a option all right
+so what is the option to view the mp3
+file
+to view the details of the mp3 file yes
+if i want to view i need to pass the
+option that is minus v
+right i want to pass the option that is
+minus v
+then along with the file name
+that is here i am taking sample dot mp3
+file
+okay so this is how i will be passing a
+mp3 file
+so if i press enter it is displaying the
+details okay here it is showing selected
+view details then mp3 tag reader and
+editor for some information and just
+printing the details of the particular
+mp3 dark mp3 file which i have passed
+which i have passed so here first it is
+displaying title here it is showing
+updater title then artist then album
+then ear then music this is nothing but
+the content okay tco yeah that type then
+comment it is showing so we'll see now
+how to fetch all these informations from
+the mp35
+okay how to fetch all these informations
+from the mp3 file okay
+so first we'll see how how the files has
+been stored okay so here i am passing
+sample.mp3 then i want to display the
+first 10 lines of the particular file i
+want to display first 10 lengths what
+was the command
+yes to display the first 10 lines of a
+file i'll be using head
+be using head of 10
+i will take 15 lines okay
+so here it is displaying some contents
+this is how the mp3 file has been stored
+it is not it is a form of hexadecimal
+formats okay so the first thing we have
+discussed is id3
+id three
+here we have discussed right
+so the first one is header id that is
+id3
+here so file identifier this will be
+stored in this header id that is id3
+so you can see here the first thing i am
+having is id3 so these three bytes of
+data which represents id3
+okay
+so after id3 i'm having version so if it
+is a version 2.3
+the version detail is zero three zero
+zero
+so the next two bytes has been allocated
+for the version
+so the first three bytes is for id three
+the next two bytes is for version
+okay so after version what what i'm
+having
+so after version what i'm having
+yes
+i'll be having a flag so after version
+i'll be having a flag here for this 2.3
+version how many bytes has been
+allocated for that uh
+flag
+yes it is of two bytes so first three
+bytes is for id3 the next two bytes is
+for version and the next two bytes is
+for flag
+then i am having the size size of the
+mp3 file okay size of the mp3 file and
+it is a four bytes
+okay so totally i'm having 10 bytes for
+the header so the first one is id3
+okay that is
+header id the next two is version
+the next two is version then i'm having
+flag and the next is for size
+so total 10 bytes of memory has been
+allocated for the frame header
+for the frame header
+after this after the 10 bytes of header
+i am having a tag
+which is nothing but this frame header
+id
+this frame id this is nothing but tag so
+but here we'll be discussing about the
+version 2.3 right so for version 2.3
+i'll be having four bytes of memory has
+been allocated for the particular frame
+id
+right so here after the 10 bytes of
+header i'm having t82 this is nothing
+but a frame header id
+right so frame header id frame id we
+call it as fmit right so this is this is
+this has been allocated for four bytes
+of data this has been allocated for four
+bytes of data
+right so if it is ti t2 means what
+if it is ti 22 means what it means
+yes it means title or song name so after
+i found the ti t2
+how many bytes of data for this i need
+to fetch the size right so then i need
+to fetch the size
+okay so after size i will be having till
+here i'll be having the name of the
+particular title which is not even song
+title after the tag i am having size and
+then with the help of the size
+i can
+fetch the
+details has been stored for the
+particular tag ti t2 means it is a title
+of the song
+d82 means it is title of the song so
+after this ti t2 i'll be having the
+title of the particular song
+particular mp3 file
+so till here i will be having the
+title of the particular tag which is
+nothing but ti t2 is for title or song
+name song title we call it us right so
+the those information will be stored
+after this tit t2
+next is next tag is tpe1 so what is tpe1
+yes it is artist name it is artist name
+and will be having some bytes of size
+then
+till here
+i'll be having the next detail that is
+nothing but the artist name so the the
+name here you can see anirudh has been
+stored right so this is the name of the
+particular
+artist
+okay tpe1 is attack it represents a
+artist name so till here i i it has been
+stored the artist name
+okay and the next tag is t a l b what is
+t a l b
+yes t a l b is album so if i found talb
+which means after this i'm having a
+album name
+okay
+album name so some bytes of uh memory
+will be allocated for this particular
+tag till here i am having the
+talb that is nothing but album name so
+the next tag i found is t by e r
+p y e r which means yes it is year so
+after this year has been stored
+so if i found a tag the tag details will
+be stored here
+okay the next one is t c o n
+t
+c o n which means content type so here
+it is showing co-libert
+okay
+the next
+thing is t-com
+right so here
+it is showing some comment or which
+composer where it has been downloaded
+from some informations about the
+particular mp3 file
+so these many informations i will be
+storing it has so many information that
+we are fetching only very few right we
+are fetching only six stacks
+so the first 10 bytes is of header and
+after the header i'm having the frame
+ids so the 4 bytes of frame id then i'm
+having the size then i'm having the
+content of the particular tag
+so this is how it will be stored
+this is how the mp3 file has been stored
+okay so this is how the mp3 file has
+been stored so we'll see one by one
+so to uh view the particular content i
+will be passing an option minus v along
+with that i need to pass a mp3 file name
+along with the i need to pass an mp3
+file name so if i press enter it is
+displaying the details about the
+particular mp3 file it is displaying the
+details the details which i have fetched
+it is
+displaying the details of the particular
+mp3 file
+okay so we will see the
+steps so here i am passing all the
+values through a command line argument
+right so here i am passing all the
+values to the command line argument
+mp3 tag reader and editor
+okay
+so here i'm having first
+i'm
+passing an option
+to view the particular
+mp35 so to view the particular details
+of the mp3 file the first thing you need
+to check is whether i have passed an
+option minus a you need to check for the
+command line argument
+whether it has been passed minus a of
+minus b object
+okay so if it is if i if the user have
+passed an option minus b which means
+the user want to read some content from
+the mp3 file okay so the first step is
+you need to check for the command line
+argument that is minus v
+this is for view
+okay
+then
+after the command line argument we need
+to open a file open the particular mp3
+file open the mp3 file how to open a
+file
+yes you will be using ef open to open a
+file right so here
+in which mode i want to open this file
+mp3 file here i'm performing only view
+right so i'm not editing anything here
+i'm just going to view the details of
+the particular mp3 file so in which mode
+i want to open yes i want to open it
+read more so open the file read more
+okay
+so after opening the file
+okay so i have checked for the command
+line argument yes i have passed an
+option minus v then i want to open the
+file that is open the mp3 file in read
+mode
+so after this i want to check
+for the id 3 whether i am having a tag
+that is id 3 type this one
+this one i want to check whether the
+file has id3 tag
+okay you need to check for this you need
+to fetch three bytes
+and
+you need to check for the id3 tag
+so then after checking whether if it is
+an id3 and to check for the version
+check for the version so here for
+2.3 version the version is has been
+stored in hexadecimal as
+right so after here then
+so you'll be checking for the version
+then you need to check for the extension
+whether i have passed a file that is mp3
+file
+check for the extension
+you need to check whether dot mp3 file
+has been passed or not
+okay along with the command line
+argument i'm passing one more argument
+right so to view i'll be passing a dot
+slash a dot out
+hyphen b then i am passing a file name
+here i'm passing the sample.mp35
+okay so first i need to check whether i
+have passed the minus v option so if it
+is passed i need to open the file in
+read mode so once the file has been
+opened
+and
+check for this id 3 whether this file is
+having id 3 or not
+then i need to check for the version
+whether it is 0 3 0 0 or not
+so if it is of version 0 3 or 0 0 3 0 0
+then i need to check for the version
+that is whether i have passed a file
+with dot mp3 extension dot mp3 extension
+so if all these conditions are true then
+you need to call a function
+to call the function
+which which is uh this function should
+perform
+to view the details of the particular
+tag to view the details of the
+particular tag so i will write here for
+example i'm naming it as some other file
+name mp3
+u.c
+okay so this is my file name so if i
+call a function it will go here right so
+if i call a particular function it will
+come to here so inside this function so
+inside this function definition i need
+to write the code which is used to
+display the contents of the particular
+mp3 file
+right so here
+the first thing is i should not disturb
+this header part i should not disturb
+this 10 bytes of header i should not
+modify or i should not do anything with
+this 10 bytes of header part right so
+the first thing to view is and to skip
+the 10 bytes of header and to skip the
+in header part
+address of 10 bytes
+how to skip
+i want to read i want to read some
+content of a file from the particular
+position
+right after the particular question i
+want to read so how to skip
+yes by using f fc i can skip right so i
+can mention from which position which
+offset
+right so you can use efc here so first i
+need to skip the
+10 bytes of header
+and just keep the 10 bytes of header
+then after the 10 bytes of header i will
+be having the tag so after 10 bytes of
+header i'll be having that tag so i need
+to read the tag then then only i can
+check whether this tag is having ti d2
+or tp even like that right
+so i need to read the tag
+okay for example ti the first tag here
+it is ti t2
+so after reading the tag then after the
+tag i am having the size right the size
+of the particular tag so i need to read
+the size
+right so after reading the size so here
+i have skipped the 10 bytes of header
+then i have skipped then i have read
+these
+tag
+these tag then i have read the size then
+what is next yes i want to read the
+title i want to read the title
+so you need to read the title
+okay so you need to read the title here
+so after reading the title you need to
+display right so you need to read
+you can use a temporary variable and
+store so before story you need to check
+here you have read some value right so
+here you have read the title
+which is nothing but tag detail that is
+tit2 i want to check whether i have red
+ti d2 or tp 1 like that right so you
+need to check whether it is
+e i p 2
+so if it is t i t 2 which means you have
+checked for a
+string so what if i want to compare two
+strings which function should i use yes
+i can go with string compare right
+so like this you need to use some
+functions so here after reading the tag
+i need to check whether i have read some
+correct tag or not so if it is a tag
+means
+again you can copy the read title into
+one variable you can copy the
+red title into one variable
+okay
+so clear
+so first i need to skip the 10 bytes of
+header then i need to read the tag
+so for example it is tit 2 so after
+reading the tag i need to read the size
+of the tag so those many times
+those many size number of times i need
+to read the title name
+then i i'm checking whether i what i
+have read for example here it is
+mentioned ti d2 if it does mention some
+other thing i need to check the
+respective things right so the first tag
+is ti t2 so after checking i need to
+check whether i have passed an
+correct option or whether i have opted
+for a correct option i have featured
+some correct value
+okay
+so i need to check for pip2
+i'm copying into one variable
+okay i'm copying the red content i'm
+copying the red content into one
+variable
+then i can print the variable
+uh last right i can print
+of the variable
+right so th this will be repeated for
+all the other things which is nothing
+but if i want to fetch the next one
+then you'll be fetching the next thing
+you will be repeating the same process
+here as well
+okay you just need to
+read the tag then read the size read the
+title then you need to check cross check
+whether you have read the
+same tag whether you have read the same
+tag if it is same am making a copy to
+particular variable at last i am
+printing okay so here i will show you
+so first i need to skip 10 bytes of
+header then i need to read
+the tag then i need to read size
+then i need to read the content which is
+nothing but name of the particular tag
+so before uh
+after reading this i need to check
+whether this i have taken a correct tag
+or not that's why i'm checking whether
+it is tit t2 for the next tag that is
+tpe1 so after reading i have read till
+here right the next tag is tpe1 so i
+need to read that next tag then i need
+to read the
+tag size then i need to read the content
+then i need to read the content then i
+need to check whether i have read this
+tp e1 or not so if it is tp e1 then i am
+storing the intent into one variable
+okay that is for a printing purpose that
+is for a printing purpose
+okay so this is how you need to read
+uncheck read and check you need to
+repeat the process for you to repeat the
+same process for all the other details
+for example
+will be uh having the title artist name
+album name year content and all right so
+you need to fetch like this you need to
+read the tag to read the size then title
+then you need to check whether you have
+read the correct tag if it is a
+character you are copying into one
+variable
+okay so this is how you'll be doing
+first view
+okay
+so the next one is
+edit
+the next one is edit
+so here to edit i will be passing so
+many informations right
+so first the command line argument which
+i am passing is dot slash a dot out
+then along with it which option should i
+pass if it does
+if i want to view i'll be passing minus
+v
+if i want to edit which option should i
+pass i'll be passing an option that is
+minus e
+then
+what was the next argument
+i want to pass an option that is which
+tag i want to edit which tag i want to
+edit for example i want to edit the
+title which means i need to pass a tag
+option that is hyphen t
+if i pass hyphen t means i
+trying to edit the title
+i am trying to add the title then i need
+to pass the
+new title name
+new title name then along with the
+file name sample.mp3
+along with the file name
+okay so dot a dot out then hyphen e
+means i want to edit the mp3 file then i
+want to pass which tag i want to edit so
+if it is minus t means i am editing the
+title if it is minus y means
+i am going to edit the
+year
+okay like this i want to pass it one
+more option which tag i want to edit
+then
+the new content
+title or new year which i am passing
+here i will be
+that will be my next argument so after
+that i need to pass the
+file name mp3 file name
+okay after this i want to pass the mp3
+file name
+so here also you need to check for the
+command line
+so you need to check for the command
+line argument whether i have passed an
+option minus e if it is minus e which
+means i am going i'm trying to edit the
+details of the particular mp3 file
+so if it is minus e
+what i need to check
+i need to check which tag the user has
+been opted to edit so i need to check
+for whether the user passed minus t
+or minus a
+or minus capital a are just an album
+name then minus y for here
+then minus m for com content
+at minus
+sorry composer like that
+okay so
+once i have check
+for minus e i need to check whether the
+user has passed any of these options
+any of these options
+so for example here i have passed an
+option minus t which means i want to
+edit the title right so here i need to
+after checking for hyphen t if it is
+hyphen b i want to edit that title right
+so here i want to edit the data before
+that you need to open the file
+open the file which is nothing but the
+mp3 file open the
+mp3 file so in which mode i want to open
+the file
+in which mode i want to open the file
+here i am writing some content
+i am writing some content
+ok reading and writing some context so
+if it is r plus which means i want to
+read and write
+what write will do
+it will erase the old content and
+replace with the new content right
+it will erase the old content and
+replace it with the new content
+right for example if i say append what
+it will do it won't erase the old
+content it will add the new content at
+the end of the file right after the last
+line it will edit the last line all
+right so i'm adding some content that
+particular content will be added to the
+last line of the file so instead of that
+here i'm opening the file in r plus mode
+which means i want to re and write the
+file okay
+so then after opening the file over here
+also i want to check for this whether i
+have passed the idp or not whether it is
+having id3 or not
+then if it is id3
+if it does id3 what next you need to
+check for the version
+for the version that is 0 3 0 0
+okay so after checking for the version
+then you need to call the particular
+this function
+we can uh if you want you can check
+at last
+here
+if it is minus e you can open the file
+then you can check for the id3 then you
+can check for the version then you can
+check for the
+options which have passed through the
+command line arguments so if it is minus
+t for this minus t means i want to edit
+the title right so here also i should
+not
+i should not uh modify or alter the
+header so header is fixed i should not
+touch this header part which means i
+need to skip the header
+so if it is true i just keep the header
+part
+which means it is having 10 bytes of
+data
+right it is having 10 bytes of data and
+to skip the 10 bytes of header part
+then what next
+so after skipping the header
+i need to yes i need to read the tag
+that is
+for example
+i'm having ti t2 this is my first tag
+all right so this is my first type a
+title which means
+okay so after reading the tag what next
+yes i need to read the size
+read the size of the particular tag
+then
+then what next i have read the size then
+i will be having the content right so
+so here
+after this header i'm reading the tag
+then i'm reading the size then i'm
+having the content then i'm having the
+content of the particular
+right so here uh i'm passing the new
+content through the command line
+argument right so i am passing the new
+title to the command line argument so
+take a duplicate or take a oh yes you
+need to take a duplicate of the command
+line argument so which argument it is at
+what position
+yes which is nothing but
+a r dv of 3
+store this arg of 3 into 1 variable okay
+then
+easy for the to replace the content
+right
+to replace the content yes i have
+skipped the 10 bytes of data then i read
+the tag then i have read the size then i
+am taking the duplicate of this
+argument 3
+this is 0 this is 2 sorry this is 1 this
+is 2 and this is 3
+so this is how the positions will be
+right so the first question is 0
+next hyphen is 1
+t is 2
+it is 3
+then it is
+4
+so these are the positions of the
+command line arguments right so here i'm
+storing this third position value
+earth position value into one variable
+okay so after taking
+that particular variable then i need to
+check whether i it is i have fetched a
+ti t2 so if it is ti t2 i need to write
+so i need so
+this
+duplicate variable
+duplicate variable content into the
+original file that is nothing but source
+file i'm taking
+okay
+the source file i'm taking
+so you need to repeat the process for
+all the other options
+all the other options
+okay
+so if it is added i want to check
+whether these many number of command
+line arguments has been passed or not if
+it does pass i want to check whether i
+have passed an option minus e
+so if it is minus e i need to open the
+file then i need to check for the id 3
+then i need to check for the version
+then i need to check for the next
+command line argument next command line
+or even whether i have passed an option
+that is minus t for title minus a
+and minus upper case a minus y like this
+okay i need to check for the next
+command line argument so if it is minus
+t which means i want to edit the title
+right so
+i need to skip the 10 bytes of header
+then i need to read the tag then i need
+to read the tag size then i need to take
+the duplicate variable of the command
+line argument third
+which is not even argument of three
+okay this is a new content which i want
+to replace
+then i want to check whether i have
+taken a tag that is ti t2 so once i
+check whether it is ti t2 then i need to
+write the
+particular content this content into the
+source file which is nothing but the
+source while mp3 file itself
+okay so this this is the flow to
+edit
+to edit
+so here this is the flow for to view
+okay
+this is the flow for view and this is
+the flow for
+okay
+so the first thing before going to
+editing and uh deleting on in your main
+for example i'm taking this main.c file
+so in this main this is a outdoor switch
+okay the first thing is you need to
+check for the cla
+whether command line argument has been
+passed or not if it is passed sorry if
+it does not pass you need to print the
+error and usage message
+you need to print the error and usage
+message
+okay so if it for example i have passed
+some command line arguments for example
+i have passed a minus the option check
+for minus t
+so for example i am passing a comma
+elements oh sorry hyphen v so hyphen v
+is for
+to view
+so you need to call the function
+you have to perform some operations here
+for example here i have shown you right
+so these operations you need to perform
+inside the
+functions sorry uh inside this
+particular after checking i need to
+perform the operation
+that is
+named as to view right so to perform
+those operations here to view operations
+okay to perform the operation then after
+performing the operation you need to
+call the particular function
+all the function that function will be
+in i have taken here it does mp3
+view dot c5 right
+so mp3
+u dot c5
+so i'll be calling this function
+in this particular file name how i'm
+i'll be doing all these things
+inside this function only i'll be doing
+all these
+things okay
+so here so if i pass the minus v i'll be
+performing those two those operations
+then i'll be do calling the function
+so the next command line argument i'll
+be passing is that is check for minus e
+for minus e
+here also if it is minus e you need to
+perform the operations that is uh
+you need to
+check for that
+read and id3 or version size and all you
+need to check here right so this is for
+to edit
+to edit
+okay so once all the conditions has been
+true you need to call the respective
+function
+all the function
+okay that is you can take this mp3
+editor
+okay
+in this edit file only only you can use
+a same file so in this uh file in this
+empty created editor file will be for
+performing all the operations which is
+nothing but if i want to edit the title
+or edit attack write separate functions
+for all the
+all those things and you can combine all
+these things into one file you can write
+all the functions in one file all the
+edit functions which you want you can
+write in this file
+okay to view we can perform in this file
+it will be having only the functions
+right so you can use it here so for edit
+i'll be having six operations i want to
+edit six things right so on that time
+you can write six different functions so
+if i want to edit a title so after
+checking i will be checking here right
+so i'll be checking whether i have past
+minus t
+right so if i passed minus t means i
+will be calling this will be i i'll be
+writing all these things inside of on
+function that is edit title for example
+for example i am writing this
+into edit title function
+okay so here i will be calling the
+function so if i pass a minus t option i
+need to call this function
+so inside this function i will be
+writing these many contents
+okay
+so this is how it will be we'll see the
+sample execution for this edit one
+okay so first i'm compiling all the
+things gcc star dot c
+okay
+then i'm i'm not passing any command in
+arguments which means it should print an
+error message and usage message all
+right
+see
+if i didn't pass any command line
+argument i'm printing the error message
+as well as the usage message
+then i'm passing a command line argument
+that is hyphen hyphen help
+hyphen hyphen help it is printing the
+help menu it is printing the help menu
+okay
+so here to view i pass an option minus v
+right so dot slash a dot dot minus v
+along with that i'm pass i need to pass
+a mp3 file so here i'm passing
+sample.mp3
+then i'm giving enter so see here it is
+displaying the details of the particular
+mp3 file
+right it is displaying the details of
+the mp3 file
+here the year is 1999
+we will try to edit the year okay we'll
+try to edit the year
+so if i pass minus v
+it will display the details of the
+particular mp3 file then i want to edit
+the year which means i need to pass a
+command line argument and i need to pass
+an option that is minus e to edit then i
+need to edit the year so what is the
+option to edit the year
+yes it is minus y
+then i need to pass the new year so i am
+passing it as 2022
+then i need to pass the
+mp3 file name
+mp3 file name
+see
+so the selector i have selected edit
+details selected edit option that is
+minus uh
+change the year i want to change the
+year then i have changed the eras 2020
+2022
+so we'll see whether it has been
+reflected in the original file or not so
+if i try to view the file before it is
+showing 1999 right so after performing
+the edit operation
+after performing the edit operation
+it should be changed yes before it was
+1999
+once i change it is changing in the
+original file itself it is changing in
+the original file itself
+clear
+so if i perform any changes it should be
+reflected as a permanent changes in the
+file itself
+so that's why
+here i'm writing the same into the see
+i'm writing the content into the source
+file itself
+okay
+so this these are the steps to view the
+file you need to check all these
+function and you need to call the
+function so this is the function call so
+if you call a function this is the
+function definition it will go to the
+respective function definition
+okay
+to edit so i'll be passing this many
+number of arguments this is the
+flow what are all the command line
+arguments i want to check then i'll be
+calling the function for example if i
+want to edit i'll be calling a function
+edit title okay into the function i'll
+be doing this many operations
+okay so if i didn't pass any argument i
+need to print error and usage message if
+i pass an option minus v i need to check
+whether it is id 3 and i need to check
+whether it i have passed the version 0 3
+0 0 then i need to check
+i have passed that mp3 file all right so
+after this i'll be calling this function
+these steps so i want to check the
+version check the extension i want to
+call the function and this is my
+function will do
+right so for edit i will be passing an
+option minus e so if i pass minus e
+means then i need to open a file then i
+need to check for id 3 then version then
+i need to check for the command line
+arguments that is the next option which
+one i want which tag i want to edit
+then i want to call a function if i call
+a function it will go here and it will
+perform the operations
+okay
+so here this is how your output should
+display if i didn't pass any command
+line argument
+if i didn't pass any command line
+argument it should print error and usage
+message
+okay if i pass a command line argument
+with help i need to print the help menu
+okay i want to print the help menu
+if i pass if i want to view the file
+content means i want to pass an option
+minus v along with that i need to pass
+the mp3 file name
+so these many details i am displaying
+now okay
+so if i want to edit
+if i want to edit i need to pass an
+option like this
+so
+a minus e to minus e it represents i
+want to edit something then which field
+i want to edit which tag i want to edit
+if it does here i will
+minus y i'm giving 2012
+okay this is nothing but the new content
+which i want to replace then in which
+file i want to replace okay
+so before it was 2022 now i have changed
+to 2012
+see this showing 2012 if i check for
+view the details of the original file it
+should display the updated year it
+should display the updated content
+it should display the updated content
+so these many things you need to do in
+this project
+you need to view as well as you need to
+edit the particular mp3 file
+so if i want to edit the details i'll be
+editing with the following steps which i
+have shown here okay and also if i want
+to view the details i will be doing
+these many things
+clear with the project
+what you want to do are you clear
+yeah thank you
