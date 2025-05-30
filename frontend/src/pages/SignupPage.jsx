@@ -23,12 +23,12 @@ function SignupPage() {
         email,
         username,
         password,
-        confirmPassword, // If your backend expects `password2`, change this
+        password2: confirmPassword, // If your backend expects `password2`, change this
       });
 
       localStorage.setItem('access_token', response.data.access);
       alert("Signup successful");
-      navigate('/upload');
+      navigate('/');
     } catch (error) {
       console.error(error);
       alert('Signup failed: ' + (error.response?.data?.detail || 'Unknown error'));

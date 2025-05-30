@@ -8,15 +8,26 @@ class CustomUser(AbstractUser):
     REQUIRED_FIELDS = ['username']
 
 class FileUpload(models.Model):
-    objects = models.Manager()
+    CATEGORY_CHOICES = [
+        ('image', 'Image'),
+        ('document', 'Document'),
+        ('video', 'Video'),
+        ('other', 'Other'),
+    ]
+
     uploaded_by = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     file = models.FileField(upload_to='uploads/')
+    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, default='other')
     upload_date = models.DateTimeField(auto_now_add=True)
+
     @property
     def filename(self):
         return self.file.name.split('/')[-1]
 
     @property
     def file_type(self):
-        ext = self.filename.split('.')[-1]
-        return ext.lower()
+        return self.filename.split('.')[-1].lower()
+
+    @property
+    def file_size(self):
+        return self.file.size  # size in bytes

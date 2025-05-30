@@ -26,7 +26,9 @@
   background-color: #ddd;
   padding: 2px;
 }
-
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 /* Body */
 .body {
   display: flex;

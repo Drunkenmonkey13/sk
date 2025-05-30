@@ -1,19 +1,22 @@
-from rest_framework import generics, permissions
+from rest_framework import generics, permissions,status
 from .models import FileUpload, CustomUser
 from .serializers import FileUploadSerializer, CustomUserSerializer
 from rest_framework.response import Response
+from rest_framework.parsers import MultiPartParser, FormParser
+from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.db.models import Count
-
+from .serializers import RegisterSerializer
+from rest_framework.permissions import IsAuthenticated
 class FileUploadView(generics.CreateAPIView):
-    serializer_class = FileUploadSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-    def perform_create(self, serializer):
-        serializer.save(uploaded_by=self.request.user)
-
-
-
+ parser_classes = [MultiPartParser, FormParser]
+permission_classes = [IsAuthenticated]
+def post(self, request, format=None):
+    serializer = FileUploadSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save(uploaded_by=request.user)
+        return Response({'message': 'File uploaded successfully', 'data': serializer.data}, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 class FileListView(generics.ListAPIView):
     serializer_class = FileUploadSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -51,18 +54,6 @@ class UserProfileView(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=400)
     
-
-class siguupview(APIView):
-    permission_classes = [permissions.IsAuthenticated]
-    def post(self, request):
-        username = request.data.get('username')
-        password = request.data.get('password')
-        email = request.data.get('email')
-
-        if serializer.is_valid():
-            return Response({'error': 'Username already taken'}, status=status.HTTP_400_BAD_REQUEST)
-
-        user = User.objects.create_user(username=username, password=password, email=email)
-        return Response({'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
-
-
+class RegisterView(generics.CreateAPIView):
+    queryset = CustomUser.objects.all()
+    serializer_class = RegisterSerializer
