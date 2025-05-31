@@ -6,6 +6,7 @@ import './upload.css';
 import { useNavigate } from 'react-router-dom';
 import UserProfilePage from "./UserProfilePage";
 import Modal from './Model';
+import filesize from 'filesize';
 const quickFolders = [
   { name: 'Order Placed', size: '2.5 GB', items: 51 },
   { name: 'In Progress', size: '4.2 GB', items: 0 },
@@ -51,12 +52,11 @@ export default function UploadPage() {
       if (!response.ok) throw new Error('Failed to fetch files');
       const files = await response.json();
       setSampleFiles(files.map(file => ({
-        name: file.file,
-        size: file.size,
-        modified: new Date(file.upload_date).toDateString(),
-        tags: [file?.file?.split('.').pop().toLowerCase()],
-        sharedUsers: ['📂'],
-        status: file.status || 'Order Placed' // defaulting to a status for filter
+        name: file.file.split('/').pop(),               // file name from path
+        type: file.file_type || 'unknown',              // file type (extension or type field)
+        uploadedDate: new Date(file.upload_date),       // actual Date object
+        size: formatBytes(file.file_size),                            // file size
+        status: file.status || 'Order Placed',
       })));
     } catch (error) {
       console.error(error);
@@ -90,12 +90,12 @@ export default function UploadPage() {
         ...prev,
         {
           name: data.data.filename,
-          size: `${(data.data.file_size / 1024 / 1024).toFixed(2)} MB`,
-          modified: new Date(data.data.upload_date).toDateString(),
+          size: formatBytes(data.data.file_size),
+          uploadedDate: new Date(data.data.upload_date).toLocaleString(),
           type: data.data.file_type,
+          status: data.data?.status || 'Order Placed'
         },
       ]);
-
       setFileToUpload(null);
       setShowUploadModal(false);
     } catch (error) {
@@ -104,6 +104,12 @@ export default function UploadPage() {
     }
   };
 
+  const formatBytes = (bytes) => {
+    if (bytes === 0) return '0 Bytes';
+    const units = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(1024));
+    return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${units[i]}`;
+  };
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -220,9 +226,8 @@ export default function UploadPage() {
               <tr>
                 <th className="text-left px-6 py-3">Name</th>
                 <th className="text-left px-6 py-3">Size</th>
-                <th className="text-left px-6 py-3">Modified</th>
-                <th className="text-left px-6 py-3">Tags</th>
-                <th className="text-left px-6 py-3">Shared</th>
+                <th className="text-left px-6 py-3">Uploaded Date</th>
+                <th className="text-left px-6 py-3">type</th>
               </tr>
             </thead>
             <tbody>
@@ -234,21 +239,16 @@ export default function UploadPage() {
                 >
                   <td className="px-6 py-4 font-medium">📄 {file.name}</td>
                   <td className="px-6 py-4">{file.size}</td>
-                  <td className="px-6 py-4">{file.modified}</td>
-                  <td className="px-6 py-4 space-x-1">
-                    {file.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </td>
-                  <td className="px-6 py-4 space-x-1">
-                    {file.sharedUsers.map((user, i) => (
+                  <td className="px-6 py-4">{new Date(file.uploadedDate).toLocaleString()}</td>
+                  {/* <td className="px-6 py-4 space-x-1">
+                    {
+                      <span className="bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded">{file.status} </span>
+                    }
+                  </td> */}
+                  <td className="px-6 py-4 space-x-1">{file.type}
+                    {/* {file.sharedUsers.map((user, i) => (
                       <span key={i}>{user}</span>
-                    ))}
+                    ))} */}
                   </td>
                 </tr>
               ))}

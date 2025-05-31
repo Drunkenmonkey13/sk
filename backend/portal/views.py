@@ -8,21 +8,30 @@ from rest_framework.views import APIView
 from django.db.models import Count
 from .serializers import RegisterSerializer
 from rest_framework.permissions import IsAuthenticated
+
+
 class FileUploadView(generics.CreateAPIView):
- parser_classes = [MultiPartParser, FormParser]
-permission_classes = [IsAuthenticated]
-def post(self, request, format=None):
-    serializer = FileUploadSerializer(data=request.data)
-    if serializer.is_valid():
-        serializer.save(uploaded_by=request.user)
-        return Response({'message': 'File uploaded successfully', 'data': serializer.data}, status=status.HTTP_201_CREATED)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    serializer_class = FileUploadSerializer
+    parser_classes = [MultiPartParser, FormParser]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, format=None):
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(uploaded_by=request.user)
+            return Response({'message': 'File uploaded successfully', 'data': serializer.data}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
 class FileListView(generics.ListAPIView):
+    queryset = FileUpload.objects.all()
     serializer_class = FileUploadSerializer
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        return FileUpload.objects.filter(uploaded_by=self.request.user)
+        return self.queryset.filter(uploaded_by=self.request.user)
+
 
 class PortalDetailsView(APIView):
     permission_classes = [permissions.IsAuthenticated]
