@@ -103,7 +103,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),  # Access token valid for 30 mins
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=90),  # Access token valid for 90 mins
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),     # Refresh token valid for 7 days
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,

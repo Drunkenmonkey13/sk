@@ -46,7 +46,7 @@ export default function UploadPage() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
+  const [editModalOpen, setEditModalOpen] = useState(false);
   // ✅ Fetch and map files from the backend API
   const fetchFiles = async () => {
     const token = localStorage.getItem('access_token');
