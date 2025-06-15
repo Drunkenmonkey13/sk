@@ -1,0 +1,37 @@
+.glossy-line {
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 55%
+  );
+  animation: glossySweep 1.6s linear infinite;
+  transform: rotate(30deg);
+}
+
+@keyframes glossySweep {
+  0% {
+    transform: translate(-100%, -100%) rotate(30deg);
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(30deg);
+  }
+}
+@keyframes coinFlip {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+.loader-img {
+  transform-style: preserve-3d;
+  animation: coinFlip 2s linear infinite;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+}

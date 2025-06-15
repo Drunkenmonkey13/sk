@@ -5,12 +5,14 @@ import FilesListPage from './pages/FilesListPage';
 import PortalDetailsPage from './pages/PortalDetailsPage';
 import UserProfilePage from './pages/UserProfilePage';
 import SignupPage from './pages/SignupPage';
+import { LoaderProvider } from './LoaderContext';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<LoginPage />} />
         <Route path="/upload" element={<UploadPage />} />
         <Route path="/files" element={<FilesListPage />} />
