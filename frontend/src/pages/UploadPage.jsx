@@ -106,24 +106,25 @@ export default function UploadPage() {
 
       if (!response.ok) throw new Error('Upload failed');
       const data = await response.json();
-
-      setSampleFiles((prev) => [
-        ...prev,
-        {
-          name: data.data.filename,
-          size: formatBytes(data.data.file_size),
-          uploadedDate: new Date(data.data.upload_date).toLocaleString(),
-          type: data.data.file_type,
-          status: data.data?.status || 'Order Placed'
-        },
-      ]);
+      fetchFiles();
+      // setSampleFiles((prev) => [
+      //   ...prev,
+      //   {
+      //     id:data.data.id,
+      //     name: data.data.filename,
+      //     size: formatBytes(data.data.file_size),
+      //     uploadedDate: new Date(data.data.upload_date).toLocaleString(),
+      //     type: data.data.file_type,
+      //     status: data.data?.status || 'Order Placed'
+      //   },
+      // ]);
       setFileToUpload(null);
       setShowUploadModal(false);
       showToast("File uploaded Sucessfully!...", "success");
 
     } catch (error) {
       console.error('Upload error:', error);
-      alert('Failed to upload file.');
+      showToast("Failed to upload file.","error");
     }
   };
 
